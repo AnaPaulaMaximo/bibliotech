@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif
+}
+.cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5vh 0;
+}
+
+.itens{
+    display: flex;
+    gap: 25px;
+}
+
+.botao{
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background-color: #BE580F;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+.cabecalho img{
+    width: 200px;
+    
+}
+.hero{
+    width: 100w;
+    height: 95vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-image: url("assets/capa.jpeg");
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hero h1{
+     color: white;
+     font-weight: 700;
+     font-size: 4rem;
+     margin-left: 150px;
+}
+
+.hero p{
+    color: white;
+}
+
+.hero span{
+    color: #BE580F;
+}
+
+.sessao1{
+    background-color: #edecf7;
+    height: 450px;
+}
+.novidades{
+     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5vh 0;
+}
+
+.novidades h1{
+    padding-left: 20px;
+}
+
+.novidades p{
+    padding-right: 20px;
+    color: #BE580F;
+}
+
+.livros{
+     display: flex;
+    align-items: center;
+    justify-content: space-evenly;  
+}
+.book{
+   display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    height: 300px;
+    width: 200px;
+}
+
+.book button{
+    border-radius: 5px;
+    width: 170px;
+    height: 30px;
+    color: #BE580F;
+    background-color: #faece2;
+    border: #faece2;
+    margin: 5px;
+}
+
+.book p{
+    color: #a9a7a5;
+}
+
+.book img{
+    height: 200;
+    width: 150px;
+    border-radius: 5px;
+}
+
+.sessao2{
+    padding: 20px;
+    background-color: #faece2 ;
+}
+
+.titulo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+
+}
+
