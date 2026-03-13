@@ -1,20 +1,38 @@
-*{
+* {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
-.cabecalho{
+
+/* --- CABEÇALHO --- */
+.cabecalho {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding: 5vh 0;
+    justify-content: space-between;
+    padding: 0 5vw;
+    height: 10vh;
+    background-color: white;
+    overflow: hidden;
 }
 
-.itens{
+.cabecalho img {
+    height: 80px; 
+}
+
+.itens {
     display: flex;
-    gap: 25px;
+    gap: 30px;
 }
 
-.botao{
+.itens p {
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.botao {
     padding: 10px 20px;
     border: none;
     outline: none;
@@ -22,103 +40,340 @@
     border-radius: 5px;
     cursor: pointer;
     color: white;
+    font-weight: bold;
 }
 
-.cabecalho img{
-    width: 200px;
-    
-}
-.hero{
-    width: 100w;
-    height: 95vh;
+/* --- HERO --- */
+.hero {
+    width: 100%;
+    height: 60vh; 
     justify-content: center;
     align-items: center;
     display: flex;
-    background-image: url("assets/capa.jpeg");
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("assets/capa.jpeg");
+    background-size: cover;
+    background-position: center;
     flex-direction: column;
+    gap: 20px;
+}
+
+.hero h1 {
+    color: white;
+    font-weight: 700;
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+.hero p {
+    color: #e0e0e0;
+    font-size: 1.2rem;
+}
+
+.hero span {
+    color: #BE580F;
+}
+
+.pesquisa {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 10px;
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
     gap: 10px;
 }
 
-.hero h1{
-     color: white;
-     font-weight: 700;
-     font-size: 4rem;
-     margin-left: 150px;
+.barra {
+    background-color: white;
+    flex: 1;
+    height: 45px;
+    border-radius: 5px;
+    border: none;
+    padding-left: 20px;
+    outline: none;
+    font-size: 1rem;
 }
 
-.hero p{
+.pesquisa button {
+    border: none;
+    border-radius: 5px;
+    background-color: #BE580F;
     color: white;
+    padding: 0 20px;
+    height: 45px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
-.hero span{
-    color: #BE580F;
+/* --- SESSÃO 1: NOVIDADES --- */
+.sessao1 {
+    background-color: #ffffff; 
+    padding: 5vh 10vw 10vh 10vw;
 }
 
-.sessao1{
-    background-color: #edecf7;
-    height: 450px;
-}
-.novidades{
-     display: flex;
+.novidades {
+    display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5vh 0;
+    padding-bottom: 40px;
 }
 
-.novidades h1{
-    padding-left: 20px;
+.novidades h1 {
+    font-size: 2rem;
+    color: #222;
 }
 
-.novidades p{
-    padding-right: 20px;
+.novidades p {
     color: #BE580F;
+    font-weight: bold;
+    cursor: pointer;
 }
 
-.livros{
-     display: flex;
+.livros {
+    display: flex;
     align-items: center;
-    justify-content: space-evenly;  
+    justify-content: space-between;
+    gap: 20px;
 }
-.book{
-   display: flex;
-    align-items: center;
+
+.book {
+    display: flex;
+    align-items: flex-start;
     justify-content: center; 
     flex-direction: column;
     background-color: white;
     border-radius: 10px;
-    height: 300px;
-    width: 200px;
+    width: 23%;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
 }
 
-.book button{
+.book img {
+    width: 100%;
+    height: auto;
     border-radius: 5px;
-    width: 170px;
-    height: 30px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.book h2 {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.book p {
+    color: #a9a7a5;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.book button {
+    border-radius: 5px;
+    width: 100%;
+    height: 40px;
     color: #BE580F;
     background-color: #faece2;
-    border: #faece2;
-    margin: 5px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
 }
 
-.book p{
-    color: #a9a7a5;
+/* --- SESSÃO 2: EVENTOS --- */
+.sessao2 {
+    padding: 8vh 10vw;
+    background-color: #fcf4f0; 
 }
 
-.book img{
-    height: 200;
-    width: 150px;
-    border-radius: 5px;
+.texto_topo p {
+    color: #BE580F;
+    font-size: small;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
-.sessao2{
-    padding: 20px;
-    background-color: #faece2 ;
-}
-
-.titulo{
+.titulo {
     display: flex;
     align-items: center;
     justify-content: space-between;  
-
+    padding-bottom: 40px;
+    padding-top: 10px;
 }
 
+.titulo h1 {
+    font-size: 2.5rem;
+    color: #222;
+}
+
+.titulo button {
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #333;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.eventos {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.evento {
+    background-color: white;
+    flex: 1;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.data {
+    width: 60px;
+    height: 60px; 
+    background-color: #fcf4f0;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.data .dia {
+    font-weight: bold;
+    color: #BE580F;
+    font-size: 1.2rem;
+}
+
+.data .mes {
+    font-weight: bold;
+    color: #BE580F;
+    font-size: 0.8rem;
+}
+
+.evento h2 {
+    font-size: 1.3rem;
+    padding-top: 20px;
+    color: #333;
+}
+
+.decricao_evento {
+    color: #777;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    line-height: 1.5;
+    font-size: 0.95rem;
+}
+
+.evento button {
+    color: #BE580F;
+    border: none;
+    font-weight: bold;
+    background-color: transparent;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* --- SESSÃO 3: SERVIÇOS --- */
+.sessao3 {
+    background-color: #ffffff;
+    padding: 8vh 10vw;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo_s3 {
+    text-align: center;
+    max-width: 600px;
+    margin-bottom: 50px;
+}
+
+.titulo_s3 h1 {
+    font-size: 2.5rem;
+    color: #222;
+}
+
+.titulo_s3 p {
+    color: #777;
+    margin-top: 15px;
+    line-height: 1.5;
+}
+
+.topicos {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 30px;
+}
+
+.topico {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column; 
+    flex: 1;
+}
+
+.topico h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.topico p {
+    color: #777;
+    line-height: 1.5;
+    font-size: 0.95rem;
+}
+
+.icone {
+    width: 60px;
+    height: 60px;
+    background-color: #BE580F;
+    border-radius: 100%;
+}
+
+/* --- RODAPÉ --- */
+.rodape {
+    background-color: #2A1B12; /* Marrom escuro */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 10vw;
+    gap: 40px;
+}
+
+.rodape-coluna {
+    flex: 1;
+}
+
+.logo-rodape img {
+    margin-bottom: 20px;
+    filter: brightness(0) invert(1); /* Torna a logo branca se for preta */
+}
+
+.logo-rodape p {
+    color: #a9a7a5;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.rodape-coluna h3 {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.rodape-coluna p {
+    color: #a9a7a5;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+.horas p {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding-bottom: 5px;
+}
